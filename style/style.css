@@ -51,31 +51,33 @@ h1,
 }
 
 .profile-card {
-  width: 400px;
-  height: 550px;
+  width: 350px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   gap: 20px;
   border-radius: 18px;
-  background: url('../images/bg-pattern-card.svg') white;
-  background-position: 0px -15px;
+  background: url("../images/bg-pattern-card.svg") white;
+  background-position: 0px 0px;
   background-repeat: no-repeat;
 }
 
 .profile-image {
-    border: 5px solid white;
+  position: relative;
+  top: -30px;
+  border: 5px solid white;
   border-radius: 50%;
 }
 
 .age {
-    font-weight: 400;
-    color: var(--dark-grayish-blue);
+  font-weight: 400;
+  color: var(--dark-grayish-blue);
 }
 
 .location {
-    margin-top: -10px;
+  margin-top: -10px;
 }
 
 .stats {
@@ -112,15 +114,14 @@ h1,
 }
 
 @media screen and (max-width: 1200px) {
-    body {
-        background-position: -30vw -50vw, 45vw 35vw;
-    }
-    
+  body {
+    background-position: -30vw -50vw, 45vw 35vw;
+  }
 }
 
 @media screen and (max-width: 375px) {
-    body {
-        background-size: 80vw, 130vw;
-        background-position: -30vw -30vw, 50vw 100vw;
-    }
+  body {
+    background-size: 80vw, 130vw;
+    background-position: -30vw -30vw, 50vw 100vw;
+  }
 }
