@@ -1,0 +1,126 @@
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* FONTS */
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url("../fonts/KumbhSans-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url("../fonts/KumbhSans-Bold.ttf");
+  font-weight: 700;
+}
+
+/* CSS VARABLES */
+/* COLORS */
+:root {
+  /* primary */
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  /* neutral */
+  --dark-grey: hsl(0, 0%, 59%);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  color: var(--dark-grayish-blue);
+  background: url("../images/bg-pattern-top.svg"),
+    url("../images/bg-pattern-bottom.svg"), var(--dark-cyan);
+  background-size: 80vw, 80vw;
+  background-repeat: no-repeat, no-repeat;
+  background-position: -30vw -50vw, 45vw 20vw;
+}
+
+h1,
+.stats-item__count {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--very-dark-desaturated-blue);
+}
+
+.profile-card {
+  width: 300px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  border-radius: 18px;
+  background: url('../images/bg-pattern-card.svg') white;
+  background-position: 0px -15px;
+  background-repeat: no-repeat;
+}
+
+.profile-image {
+    border: 5px solid white;
+  border-radius: 50%;
+}
+
+.age {
+    font-weight: 400;
+    color: var(--dark-grayish-blue);
+}
+
+.location {
+    margin-top: -10px;
+}
+
+.stats {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid var(--dark-grey);
+}
+
+.stats-item {
+  padding: 1.3rem 1.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tags {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--dark-grey);
+}
+
+/* FOOTER */
+.attribution {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: white;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        background-position: -30vw -50vw, 45vw 35vw;
+    }
+    
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        background-size: 80vw, 130vw;
+        background-position: -30vw -30vw, 50vw 100vw;
+    }
+}
